@@ -1,0 +1,59 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.form-item {
+  margin-bottom: 10px;
+}
+
+.form-item label {
+  width: 100px;
+  display: inline-block;
+}
+
+#task-list li {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrp-btn {
+    display: flex;
+}
+
+#task-list li.done {
+  background: lightgreen;
+}
+
+.done-line {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.undone-line {
+  color: rebeccapurple;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.total-line {
+  font-weight: bold;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <script defer src="./js/main.js"></script>
+    <title>HW 13</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form>
+        <div class="form-item">
+          <label for="task">Task:</label>
+          <input type="text" id="task" required />
+        </div>
+        <div class="form-item">
+          <label for="worker">Worker:</label>
+          <select id="worker" required>
+            <option value="designer">Designer</option>
+            <option value="developer">Developer</option>
+            <option value="tester">Tester</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <label for="deadline">Deadline:</label>
+          <input type="date" id="deadline" required min="2024-04-25" /><br />
+        </div>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="task-list"></ul>
+      <div class="done-line">Done: <span id="done-count"></span></div>
+      <div class="undone-line">Undone: <span id="undone-count"></span></div>
+      <div class="total-line">Total: <span id="total-count"></span></div>
+    </div>
+  </body>
+</html>
